@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkin Park - Join Fan Club</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+    <!-- Header Section -->
+    <header class="container-fluid bg-dark text-white p-3 text-center" itemprop="headline">
+        <img src="assets/linkin-park-band-logo.png" alt="Linkin Park Logo" style="max-width: 100px;">
+        <h1>Join the Linkin Park Fan Club</h1>
+    </header>
+
+    <!-- Sidebar & Form Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-sm-4 bg-light sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="form.html" class="nav-link">Join Fan Club</a></li>
+                    <li class="nav-item"><a href="table.html" class="nav-link">Band Discography</a></li>
+                </ul>
+            </nav>
+
+            <!-- Form Content -->
+            <main class="col-md-9 col-sm-8" itemprop="mainContentOfPage">
+                <h2>Join the Fan Club</h2>
+                <form action="form-submission.html" method="get" class="p-3">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="album">Choose Your Favorite Linkin Park Album:</label>
+                        <select class="form-control" id="album" name="album" required>
+                            <option value="">--Select an Album--</option>
+                            <option value="Hybrid Theory">Hybrid Theory</option>
+                            <option value="Meteora">Meteora</option>
+                            <option value="Minutes to Midnight">Minutes to Midnight</option>
+                            <option value="A Thousand Suns">A Thousand Suns</option>
+                            <option value="Living Things">Living Things</option>
+                            <option value="The Hunting Party">The Hunting Party</option>
+                            <option value="One More Light">One More Light</option>
+                            <option value="Reanimation">Reanimation</option>
+                            <option value="Road to Revolution">Road to Revolution</option>
+                            <option value="Live in Texas">Live in Texas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Why do you love Linkin Park?</label>
+                        <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Join Now</button>
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white text-center p-3" itemprop="footer">
+        <p>&copy; 2024 Linkin Park Fan Page. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
